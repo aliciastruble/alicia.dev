@@ -12,10 +12,11 @@ let num = 0;
 function loadAtRandom() {
   let timer = setInterval(function() {
     makeCircle();
-    num++;
-
-    if (num > 500) clearInterval(timer);
+    if (num > 1024) {
+      clearInterval(timer);
+    }
   }, 80);
+  num++;
 }
 
 function makeCircle() {
@@ -31,6 +32,6 @@ function makeCircle() {
   circleStyle.borderRadius = "50%";
   circleStyle.top = y + "px";
   circleStyle.left = x + "px";
-  //   circleStyle.opacity = 0.3;
+  circleStyle.opacity = 0.35;
   document.getElementById("main").appendChild(circle);
 }
