@@ -7,9 +7,6 @@ const height =
   document.documentElement.clientHeight ||
   document.body.clientHeight;
 
-const maxX = width - 34;
-const maxY = height - 34;
-
 let num = 0;
 
 function loadAtRandom() {
@@ -18,18 +15,18 @@ function loadAtRandom() {
     if (num > 1024) {
       clearInterval(timer);
     }
-  }, 80);
+  }, 200);
   num++;
 }
 
 function makeCircle() {
   let circle = document.createElement("circle");
   circle.id = "circle" + num;
-  circle.className = "circle";
+  circle.className = "circle fade-in";
   let x = Math.floor(Math.random() * width);
   let y = Math.floor(Math.random() * height);
   let circleStyle = circle.style;
-  circleStyle.top = (y > maxY ? maxY : y) + "px";
-  circleStyle.left = (x > maxX ? maxX : x) + "px";
+  circleStyle.left = x + "px";
+  circleStyle.top = y + "px";
   document.getElementById("main").appendChild(circle);
 }
