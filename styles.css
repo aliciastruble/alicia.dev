@@ -1,9 +1,6 @@
 body {
     background-color: #130e1d;
-    color: white;
     font-family: 'B612', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
 }
 
 .container {
@@ -14,9 +11,18 @@ body {
     text-align: center;
 }
 
-/* .circle {
-    height: 22px;
-    width: 22px;
-    background-color: gold;
-    border-radius: 50%;
-} */
+ul {
+    list-style-type: none;
+}
+
+.title-text {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.paragraph-text {
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+}
