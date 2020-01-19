@@ -26,3 +26,13 @@ ul {
     font-weight: normal;
     font-size: 14px;
 }
+
+.circle {
+    z-index: -1;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    background-color: gold;
+    opacity: .35;
+    border-radius: 50%;
+}

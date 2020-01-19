@@ -7,6 +7,9 @@ const height =
   document.documentElement.clientHeight ||
   document.body.clientHeight;
 
+const maxX = width - 34;
+const maxY = height - 34;
+
 let num = 0;
 
 function loadAtRandom() {
@@ -22,16 +25,11 @@ function loadAtRandom() {
 function makeCircle() {
   let circle = document.createElement("circle");
   circle.id = "circle" + num;
+  circle.className = "circle";
   let x = Math.floor(Math.random() * width);
   let y = Math.floor(Math.random() * height);
   let circleStyle = circle.style;
-  circleStyle.position = "absolute";
-  circleStyle.height = "22px";
-  circleStyle.width = "22px";
-  circleStyle.backgroundColor = "gold";
-  circleStyle.borderRadius = "50%";
-  circleStyle.top = y + "px";
-  circleStyle.left = x + "px";
-  circleStyle.opacity = 0.35;
+  circleStyle.top = (y > maxY ? maxY : y) + "px";
+  circleStyle.left = (x > maxX ? maxX : x) + "px";
   document.getElementById("main").appendChild(circle);
 }
