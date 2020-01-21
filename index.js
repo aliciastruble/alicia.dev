@@ -15,7 +15,7 @@ function loadAtRandom() {
     if (num > 1024) {
       clearInterval(timer);
     }
-  }, 200);
+  }, 100);
   num++;
 }
 

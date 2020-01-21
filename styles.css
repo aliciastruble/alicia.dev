@@ -47,50 +47,51 @@ ul {
 }
 
 @keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: .35;
     }
 }
 
 @-moz-keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: .35;
     }
 }
 
 @-webkit-keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: .35;
     }
 }
 
 @-o-keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: .35;
     }
 }
 
 @-ms-keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: .35;
     }
+}
